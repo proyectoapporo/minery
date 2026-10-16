@@ -1,0 +1,14 @@
+{
+  "name": "minery",
+  "version": "1.1.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "dev": "node --env-file-if-exists=.env server.mjs",
+    "check": "node --check public/app.js && node --check public/business.js && node --check public/business-math.js && node --check public/history.js && node --check netlify/functions/quote.mjs"
+  }
+}
