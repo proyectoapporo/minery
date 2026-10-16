@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {purchase,alloy,production,order} from './public/math.js';
+import {mix,raise} from './public/math.js';
+test('Acepta coma decimal y rechaza NaN, infinito y precio negativo',()=>{assert.equal(purchase(440000,'2,5',800,90).total,792000);for(const value of [NaN,Infinity,-1])assert.throws(()=>purchase(value,10,750,90));assert.throws(()=>order(10,3,0,750,0));assert.throws(()=>raise(10,585,750,1001))});
+test('Fabricar sin cambiar la ley no requiere liga',()=>{assert.equal(alloy(10,750,750).added,0);assert.equal(production(12,750,750,3,0).count,4)});
+test('Mezclar conserva el contenido fino',()=>{const r=mix(10,750,10,999);assert.equal(r.law,874.5);assert.equal(r.fine,17.49)});
+test('Subir ley conserva el balance fino',()=>{const r=raise(10,585,750,999);assert.ok(Math.abs((10*.585+r.added*.999)/r.total-.75)<1e-9);assert.throws(()=>raise(10,585,999,999))});
+test('Compra con ley 850 y pago al 90%',()=>assert.equal(purchase(440000,20,850,90).total,6732000));
+test('999 conserva 99.9 gramos finos al bajar a 750',()=>{const r=alloy(100,999,750);assert.equal(r.total,133.2);assert.ok(Math.abs(r.added-33.2)<1e-9);assert.equal(r.fine,99.9)});
+test('Rendimiento y sobrante',()=>{const r=production(100,999,750,3,0);assert.equal(r.count,44);assert.ok(Math.abs(r.remainder-1.2)<1e-9)});
+test('Pedido compensa merma sobre la aleación inicial',()=>{const r=order(40,3,999,750,2);assert.ok(Math.abs(r.total*.98-120)<1e-9);assert.ok(Math.abs((r.gold*.999)/r.total-.75)<1e-9)});
+test('Rechaza leyes, cantidades y pérdidas imposibles',()=>{assert.throws(()=>alloy(10,750,999));assert.throws(()=>purchase(440000,10,1001,90));assert.throws(()=>production(10,999,750,3,100));assert.throws(()=>order(2.5,3,999,750,0));assert.throws(()=>purchase('',10,750,90))});
