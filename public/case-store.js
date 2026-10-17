@@ -1,0 +1,15 @@
+import {positive,fineness,purchase} from './math.js';
+const key='minery.cases.v1';
+export function readCases(storage){try{const rows=JSON.parse(storage.getItem(key)||'[]');return Array.isArray(rows)?rows.filter(r=>r&&r.version===1&&typeof r.id==='string'&&r.id.length<=100&&typeof r.title==='string'&&r.title.length<=100&&['unknown','alloy','coated'].includes(r.material)&&Number.isFinite(Date.parse(r.updatedAt))).slice(-100).map(r=>{const v=r.valuation;const valid=v&&v.reference?.currency==='COP'&&Number.isFinite(v.reference.gram)&&v.reference.gram>0&&Number.isFinite(Date.parse(v.reference.quotedAt))&&['weight','law','payout','fees','fine','metalValue','net'].every(k=>Number.isFinite(v[k]));return{...r,notes:typeof r.notes==='string'?r.notes.slice(0,1200):'',valuation:valid?v:null,archived:r.archived===true}}):[]}catch{return []}}
+export function writeCases(storage,rows){try{storage.setItem(key,JSON.stringify(rows.slice(-100)));return true}catch{return false}}
+export function valueCase(input,reference){
+ if(input.material!=='alloy')throw Error('Para piezas recubiertas o material desconocido no se calcula todo el peso como oro. Primero verifica el material.');
+ const price=positive(reference?.gram,'Referencia'),weight=positive(input.weight,'Peso neto'),law=fineness(input.law),payout=positive(input.payout,'Porcentaje');
+ if(reference.currency!=='COP'||!Number.isFinite(Date.parse(reference.quotedAt)))throw Error('La referencia no tiene moneda o fecha válidas.');
+ if(Date.now()-Date.parse(reference.quotedAt)>15*60000||Date.parse(reference.quotedAt)>Date.now()+5*60000)throw Error('La referencia es antigua o tiene una fecha no válida. Actualiza antes de calcular.');
+ const fees=Number(String(input.fees||0).replace(',','.'));if(!Number.isFinite(fees)||fees<0)throw Error('Los costos deben ser un número igual o mayor que cero.');
+ const r=purchase(price,weight,law,payout);if(fees>r.total)throw Error('Los costos superan el pago calculado.');
+ if(!Object.values(r).every(Number.isFinite))throw Error('Las cantidades superan el rango de cálculo.');
+ return{reference:{source:String(reference.source||'GoldAPI.io'),gram:price,currency:'COP',quotedAt:reference.quotedAt},weight,law,payout,fees,fine:r.fine,metalValue:price*r.fine,net:r.total-fees};
+}
+export function caseSummary(row){const v=row.valuation;return ['MINERY · Ficha de una pieza',row.title,'Fecha: '+row.updatedAt,'Material: '+({alloy:'Oro de aleación declarado',coated:'Recubierto / golfi / laminado',unknown:'Pendiente de identificar'}[row.material]),'Peso neto declarado: '+(row.weight||'pendiente')+' g','Ley: '+(row.law||'pendiente')+' milésimas','Origen de la ley: '+(row.evidence||'pendiente'),'Observaciones: '+(row.notes||'Sin observaciones'),...(v?['Referencia COP/g fino: '+v.reference.gram,'Fecha del dato: '+v.reference.quotedAt,'Contenido fino calculado: '+v.fine+' g','Referencia del metal: '+v.metalValue+' COP','Pago al '+v.payout+' % menos '+v.fees+' COP de costos: '+v.net+' COP']:['Valoración pendiente.']),'Datos declarados por el usuario. No es certificado de pureza, factura, tasación profesional ni oferta garantizada.'].join('\n')}
