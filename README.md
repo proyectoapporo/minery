@@ -55,3 +55,8 @@ Pruebas de cálculo, conservación del oro fino, lotes, ofertas, fabricación, h
 ## Asistente web y base de conocimiento
 
 Interfaz: /asistente.html. Configuración: ASISTENTE-CONFIGURACION.md. Esquema privado de conocimiento y datos portables: knowledge/. Activar búsqueda del servidor con knowledge/enable-assistant.sql, exclusivamente en Supabase de Minery. El chat permanece desactivado hasta configurar las variables de servidor y completar la verificación real. WhatsApp aún no está integrado.
+
+
+## Centro de experiencia 1.3
+
+Portada por recorridos, biblioteca con 24 fichas y favoritos, casos de piezas y Mi espacio. Detalle en MEJORAS-1.3.md. Regenerar biblioteca con `python scripts/build-library.py`. Los casos y favoritos son locales al navegador, sin sincronización con Supabase.
