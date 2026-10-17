@@ -9,7 +9,7 @@ const port=Number(process.env.PORT)||4174;
 http.createServer(async(req,res)=>{
  try {
   const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
-  if(pathname==='/api/assistant'){let body='';for await(const chunk of req){body+=chunk.toString();if(Buffer.byteLength(body)>12000){res.writeHead(413);res.end('Mensaje demasiado largo');return}}const r=await assistant({httpMethod:req.method,headers:req.headers,body});res.writeHead(r.statusCode,r.headers);res.end(r.body);return}
+  if(['/api/assistant','/.netlify/functions/assistant'].includes(pathname)){let body='';for await(const chunk of req){body+=chunk.toString();if(Buffer.byteLength(body)>12000){res.writeHead(413);res.end('Mensaje demasiado largo');return}}const r=await assistant({httpMethod:req.method,headers:req.headers,body});res.writeHead(r.statusCode,r.headers);res.end(r.body);return}
   if(pathname==='/api/quote'){const r=await handler({httpMethod:req.method});res.writeHead(r.statusCode,r.headers);res.end(r.body);return}
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405);res.end();return}
   const file=path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
