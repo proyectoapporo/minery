@@ -1,0 +1,667 @@
+{
+  "updated_on": "2026-10-17",
+  "topics": [
+    {
+      "id": "material",
+      "title": "Material y pureza"
+    },
+    {
+      "id": "testing",
+      "title": "Verificación y ensayo"
+    },
+    {
+      "id": "trade",
+      "title": "Compra, venta y precios"
+    },
+    {
+      "id": "coatings",
+      "title": "Golfi y recubrimientos"
+    },
+    {
+      "id": "mining",
+      "title": "Origen y recuperación"
+    },
+    {
+      "id": "environment",
+      "title": "Ambiente y salud"
+    },
+    {
+      "id": "businesses",
+      "title": "Prácticas comerciales"
+    }
+  ],
+  "articles": [
+    {
+      "id": "ley",
+      "topic_id": "material",
+      "title": "Ley y quilates",
+      "body": "Ley 750 significa 75 % de oro. 999 significa 99,9 %, distinto de 1000. 18/24 equivale a 750; 14/24 a 583,33 y el marcado comercial 585 es habitual. 10/24 equivale aproximadamente a 416,67.",
+      "sources": [
+        {
+          "id": "wgc",
+          "title": "World Gold Council: composición y pureza",
+          "url": "https://www.gold.org/about-gold/about-gold-jewellery",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "kilates",
+        "quilates",
+        "18k",
+        "14k",
+        "10k",
+        "24k",
+        "750",
+        "585"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "colores",
+      "topic_id": "material",
+      "title": "Color y aleación",
+      "body": "Los metales de aleación modifican color y propiedades. Amarillo, rosa y blanco no identifican por sí solos la ley; no hay una única receta universal para cada color.",
+      "sources": [
+        {
+          "id": "wgc",
+          "title": "World Gold Council: composición y pureza",
+          "url": "https://www.gold.org/about-gold/about-gold-jewellery",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "liga",
+        "rosa",
+        "oro blanco",
+        "amarillo"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "italiano",
+      "topic_id": "material",
+      "title": "Italiano: origen, estilo y pureza",
+      "body": "Italiano no es una ley. Distinguir origen de fabricación, estilo comercial y composición 750. El origen atribuido o el brillo no garantizan pureza.",
+      "sources": [
+        {
+          "id": "italy",
+          "title": "Cámara delle Marche: marcas de metales",
+          "url": "https://www.marche.camcom.it/tutela-impresa-e-consumatore/metalli-preziosi/la-marcatura-degli-oggetti-in-metallo-prezioso",
+          "kind": "official",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "wgc",
+          "title": "World Gold Council: composición y pureza",
+          "url": "https://www.gold.org/about-gold/about-gold-jewellery",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "italiano",
+        "nacional",
+        "italy"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "sellos",
+      "topic_id": "testing",
+      "title": "Interpretar sellos",
+      "body": "750 declara ley 750; un sello no reemplaza comprobación física y puede corresponder solo a un componente. Las marcas italianas incluyen identificación y ley.",
+      "sources": [
+        {
+          "id": "italy",
+          "title": "Cámara delle Marche: marcas de metales",
+          "url": "https://www.marche.camcom.it/tutela-impresa-e-consumatore/metalli-preziosi/la-marcatura-degli-oggetti-in-metallo-prezioso",
+          "kind": "official",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "sello",
+        "marca",
+        "punzon",
+        "punzón"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "hidrostatica",
+      "topic_id": "testing",
+      "title": "Densidad y pesada hidrostática",
+      "body": "La relación entre peso en aire y pérdida aparente al sumergir permite estimar densidad con corrección del líquido. Huecos, piedras y burbujas alteran la medición. No asignar ley exacta por densidad.",
+      "sources": [
+        {
+          "id": "gia",
+          "title": "GIA: comparación de métodos de ensayo",
+          "url": "https://www.gia.edu/gems-gemology/winter-1992-gold-content-mercer",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "densidad",
+        "balanza",
+        "hidrostatica",
+        "hidrostática"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "imanes",
+      "topic_id": "testing",
+      "title": "Indicios caseros y límites",
+      "body": "Inspección y peso orientan, pero no certifican composición. Que una pieza no sea atraída por un imán no demuestra oro; un cierre puede contener componentes de otro metal.",
+      "sources": [
+        {
+          "id": "gia",
+          "title": "GIA: comparación de métodos de ensayo",
+          "url": "https://www.gia.edu/gems-gemology/winter-1992-gold-content-mercer",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "iman",
+        "imán",
+        "prueba casera"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "No hay prueba doméstica visual o magnética que por sí sola certifique oro. No recomendar fuego, mordidas o cloro."
+    },
+    {
+      "id": "toque",
+      "topic_id": "testing",
+      "title": "Piedra de toque",
+      "body": "Se compara el rastro de una muestra con patrones conocidos y reactivos adecuados. Recubrimientos, soldaduras, muestreo y experiencia afectan la interpretación.",
+      "sources": [
+        {
+          "id": "touch",
+          "title": "GIA: piedra de toque",
+          "url": "https://www.gia.edu/bench-tip-use-the-touchstone-method-for-testing-purity-karat-gold",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "piedra",
+        "toque",
+        "acidos",
+        "ácidos"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "reactivos",
+      "topic_id": "testing",
+      "title": "Reactivos de ensayo",
+      "body": "Se utilizan formulaciones comerciales basadas en ácido nítrico y otras que incluyen clorhídrico, según método y ley. Seguir ficha de seguridad e instrucciones del fabricante; no proporcionar recetas improvisadas.",
+      "sources": [
+        {
+          "id": "touch",
+          "title": "GIA: piedra de toque",
+          "url": "https://www.gia.edu/bench-tip-use-the-touchstone-method-for-testing-purity-karat-gold",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "nitrico",
+        "nítrico",
+        "agua regia",
+        "clorhidrico",
+        "clorhídrico"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Ácidos corrosivos y vapores peligrosos. No preparar mezclas caseras ni interpretar resistencia aislada como ley certificada."
+    },
+    {
+      "id": "ensayos",
+      "topic_id": "testing",
+      "title": "XRF y ensayo al fuego",
+      "body": "XRF analiza composición con influencia de superficie y recubrimientos. El ensayo al fuego es destructivo y depende de una muestra representativa. Seleccionar método profesional según material y precisión requerida.",
+      "sources": [
+        {
+          "id": "gia",
+          "title": "GIA: comparación de métodos de ensayo",
+          "url": "https://www.gia.edu/gems-gemology/winter-1992-gold-content-mercer",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "xrf",
+        "ensayo al fuego",
+        "laboratorio",
+        "24k"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "pago",
+      "topic_id": "trade",
+      "title": "Contenido fino y pago del metal",
+      "body": "Gramos finos = peso neto de aleación × ley/1000. Pago de referencia = gramos finos × COP/g fino × porcentaje/100 menos costos. No descontar otra vez la liga después de aplicar ley. Precio spot no equivale a oferta de compra garantizada.",
+      "sources": [
+        {
+          "id": "wgc",
+          "title": "World Gold Council: composición y pureza",
+          "url": "https://www.gold.org/about-gold/about-gold-jewellery",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "napo",
+          "title": "NapoGold: categorías y compra",
+          "url": "https://napogoldcompraventa.com/",
+          "kind": "vendor",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "base",
+        "compra",
+        "liquidación",
+        "pago"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "reventa",
+      "topic_id": "trade",
+      "title": "Metal, recompra y joya terminada",
+      "body": "Distinguir valor del metal, oferta del comprador y precio de joya para reventa. La diferencia de tarifas nacional/italiano no demuestra por sí sola diferente pureza. Pedir ley ensayada, costos y condiciones.",
+      "sources": [
+        {
+          "id": "napo",
+          "title": "NapoGold: categorías y compra",
+          "url": "https://napogoldcompraventa.com/",
+          "kind": "vendor",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "biyou",
+          "title": "Bi You: catálogo nacional e italiano",
+          "url": "https://www.catalogobiyou.com/",
+          "kind": "vendor",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "recompra",
+        "precio por gramo",
+        "margen"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "golfi",
+      "topic_id": "coatings",
+      "title": "Golfi, orogolfi y laminado",
+      "body": "Golfi, orogolfi, laminado y baño se usan popularmente para piezas recubiertas. El nombre comercial no acredita método de fabricación, espesor o contenido. No asumir que laminado cumple gold filled.",
+      "sources": [
+        {
+          "id": "ftc",
+          "title": "FTC: contenido de oro y recubrimientos",
+          "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.3",
+          "kind": "official_us",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "baltic",
+          "title": "Baltic: comercialización de laminado",
+          "url": "https://balticjoyeria.com/blogs/informacion-general/invierte-en-joyeria",
+          "kind": "vendor",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "golfi",
+        "orogolfi",
+        "oro golfi",
+        "laminado",
+        "baño de oro"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "gold-filled",
+      "topic_id": "coatings",
+      "title": "Gold filled y proporción de cobertura",
+      "body": "Como referencia estadounidense, gold filled contempla cobertura de aleación de oro aplicada mecánicamente y al menos 1/20 del peso metálico. Esa fracción no es oro puro: también debe considerarse el quilataje de la cobertura.",
+      "sources": [
+        {
+          "id": "ftc",
+          "title": "FTC: contenido de oro y recubrimientos",
+          "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.3",
+          "kind": "official_us",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "gold filled",
+        "gf",
+        "1/20"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Referencia de EE. UU., no certificación automática de un producto colombiano ni requisito colombiano asumido."
+    },
+    {
+      "id": "recubrimientos",
+      "topic_id": "coatings",
+      "title": "Baño, micras y cobertura",
+      "body": "Distinguir cobertura mecánica y electrochapado. Una micra es 0,001 mm. Espesor, adherencia, metal base y uso influyen en duración. 18K en una cobertura no describe la pureza de toda la pieza.",
+      "sources": [
+        {
+          "id": "ftc",
+          "title": "FTC: contenido de oro y recubrimientos",
+          "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.3",
+          "kind": "official_us",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "micras",
+        "electrochapado",
+        "bañado",
+        "recubrimiento"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "calidad-laminado",
+      "topic_id": "coatings",
+      "title": "Qué pedir al proveedor de laminado",
+      "body": "Solicitar metal base, proceso, espesor o fracción en peso, ley de cobertura y garantía escrita. No convertir años de garantía en cantidad de oro ni valorar toda la masa como 750.",
+      "sources": [
+        {
+          "id": "ftc",
+          "title": "FTC: contenido de oro y recubrimientos",
+          "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.3",
+          "kind": "official_us",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "baltic",
+          "title": "Baltic: comercialización de laminado",
+          "url": "https://balticjoyeria.com/blogs/informacion-general/invierte-en-joyeria",
+          "kind": "vendor",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "garantia",
+        "garantía",
+        "calidad",
+        "proveedor"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "aluvion",
+      "topic_id": "mining",
+      "title": "Oro de aluvión",
+      "body": "Partículas liberadas de roca y concentradas en sedimentos por transporte y selección natural. Puede estar en depósitos actuales o antiguos. No implica una pureza fija.",
+      "sources": [
+        {
+          "id": "sgc",
+          "title": "SGC: geología de depósitos",
+          "url": "https://srvags.sgc.gov.co/Archivos_Geoportal/Geologia/Guia-metodologica-Marmato.pdf",
+          "kind": "official",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "aluvión",
+        "aluvion",
+        "oro de rio",
+        "barequeo"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "veta",
+      "topic_id": "mining",
+      "title": "Oro en roca y veta",
+      "body": "Puede estar libre o asociado a minerales. No todos los depósitos primarios son vetas; la recuperación depende de liberación y mineralogía, no del nombre mina.",
+      "sources": [
+        {
+          "id": "sgc",
+          "title": "SGC: geología de depósitos",
+          "url": "https://srvags.sgc.gov.co/Archivos_Geoportal/Geologia/Guia-metodologica-Marmato.pdf",
+          "kind": "official",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "gravity",
+          "title": "planetGOLD: soluciones técnicas",
+          "url": "https://www.planetgold.org/technical-solutions",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "veta",
+        "mina",
+        "roca"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "azogue",
+      "topic_id": "environment",
+      "title": "Azogue y mercurio",
+      "body": "Azogue es mercurio. Forma amalgama con oro; al calentar material amalgamado puede liberarse vapor tóxico. No ofrecer procedimientos de amalgamación o quema.",
+      "sources": [
+        {
+          "id": "who",
+          "title": "OMS: mercurio y salud",
+          "url": "https://www.who.int/es/news-room/fact-sheets/detail/mercury-and-health",
+          "kind": "health",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "gravity",
+          "title": "planetGOLD: soluciones técnicas",
+          "url": "https://www.planetgold.org/technical-solutions",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "azogue",
+        "asogue",
+        "mercurio",
+        "amalgama"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "salud-mercurio",
+      "topic_id": "environment",
+      "title": "Riesgos sanitarios del mercurio",
+      "body": "La exposición puede dañar sistema nervioso y riñones; el metilmercurio ambiental puede llegar a alimentos y afectar especialmente el desarrollo infantil. Ante posible exposición se requiere evaluación médica.",
+      "sources": [
+        {
+          "id": "who",
+          "title": "OMS: mercurio y salud",
+          "url": "https://www.who.int/es/news-room/fact-sheets/detail/mercury-and-health",
+          "kind": "health",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "toxicidad",
+        "vapores",
+        "peces",
+        "salud"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "No diagnosticar intoxicación ni indicar tratamientos o quelantes. Derivar a servicios de salud."
+    },
+    {
+      "id": "prohibicion-hg",
+      "topic_id": "environment",
+      "title": "Mercurio en minería de Colombia",
+      "body": "MinAmbiente informa que la eliminación del uso minero de mercurio entró en vigor en 2018 conforme a Ley 1658 de 2013. No presentar retortas como autorización para usarlo.",
+      "sources": [
+        {
+          "id": "law",
+          "title": "MinAmbiente: eliminación del mercurio",
+          "url": "https://www.minambiente.gov.co/asuntos-ambientales-sectorial-y-urbana/ley-1658-de-2013/",
+          "kind": "official_co",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "prohibicion",
+        "prohibición",
+        "ley 1658"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Ámbito Colombia. Verificar cambios normativos y requisitos del sitio ante autoridades competentes."
+    },
+    {
+      "id": "sin-mercurio",
+      "topic_id": "environment",
+      "title": "Recuperación sin mercurio",
+      "body": "La clasificación y concentración gravimétrica pueden recuperar oro liberado. Trituración, molienda, flotación u otros procesos se seleccionan mediante pruebas; no existe una solución universal.",
+      "sources": [
+        {
+          "id": "gravity",
+          "title": "planetGOLD: soluciones técnicas",
+          "url": "https://www.planetgold.org/technical-solutions",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "mesa",
+        "centrifuga",
+        "centrífuga",
+        "batea",
+        "canalon"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "agua-relaves",
+      "topic_id": "environment",
+      "title": "Agua, sedimentos y relaves",
+      "body": "Planificar recirculación, control de sedimentos, calidad de agua y almacenamiento estable. Caracterizar residuos y potencial de drenaje ácido, restaurar y monitorear. Sin mercurio no significa sin impacto.",
+      "sources": [
+        {
+          "id": "criteria",
+          "title": "planetGOLD: criterios ambientales",
+          "url": "https://www.planetgold.org/resources/planetgold-criteria-environmentally-and-socially-responsible-operations",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "agua",
+        "ambiental",
+        "restauración",
+        "relaves"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "Síntesis editorial; no constituye ensayo físico ni certificación. Revisar la fuente antes de decisiones técnicas o normativas."
+    },
+    {
+      "id": "cianuro",
+      "topic_id": "environment",
+      "title": "Relaves con mercurio y cianuro",
+      "body": "No cianurar relaves con mercurio sin retirada previa adecuada y verificada de este contaminante. La alternativa química requiere diseño y controles especializados, no recetas improvisadas.",
+      "sources": [
+        {
+          "id": "tailings",
+          "title": "planetGOLD: relaves con mercurio",
+          "url": "https://www.planetgold.org/tales-mercury-containing-tailings",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "cianuro",
+        "cianuracion",
+        "cianuración"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "No proporcionar parámetros operativos de lixiviación. Remitir a diseño metalúrgico y ambiental profesional."
+    },
+    {
+      "id": "unidades-mineria",
+      "topic_id": "mining",
+      "title": "Ley de mineral frente a ley del metal",
+      "body": "g/t significa gramos de oro por tonelada de mineral. Milésimas significa proporción de oro en una aleación. Ejemplo matemático: 2 t a 5 g/t contienen 10 g antes de recuperación; al 80 % supuesto se recuperarían 8 g.",
+      "sources": [
+        {
+          "id": "gravity",
+          "title": "planetGOLD: soluciones técnicas",
+          "url": "https://www.planetgold.org/technical-solutions",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        },
+        {
+          "id": "wgc",
+          "title": "World Gold Council: composición y pureza",
+          "url": "https://www.gold.org/about-gold/about-gold-jewellery",
+          "kind": "technical",
+          "consulted_on": "2026-10-16"
+        }
+      ],
+      "terms": [
+        "g/t",
+        "gramos por tonelada",
+        "milésimas",
+        "recuperacion"
+      ],
+      "status": "reviewed",
+      "reviewed_on": "2026-10-16",
+      "limitations": "La recuperación debe ensayarse; el ejemplo no promete rendimiento. No introducir g/t en calculadoras de ley 750."
+    }
+  ]
+}
