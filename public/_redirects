@@ -1,0 +1,2 @@
+/api/assistant /.netlify/functions/assistant 200!
+/api/quote /.netlify/functions/quote 200!
