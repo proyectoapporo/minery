@@ -60,3 +60,14 @@ Interfaz: /asistente.html. Configuración: ASISTENTE-CONFIGURACION.md. Esquema p
 ## Centro de experiencia 1.3
 
 Portada por recorridos, biblioteca con 24 fichas y favoritos, casos de piezas y Mi espacio. Detalle en MEJORAS-1.3.md. Regenerar biblioteca con `python scripts/build-library.py`. Los casos y favoritos son locales al navegador, sin sincronización con Supabase.
+
+
+## Directorio de San Andresito Principal
+
+`/directorio.html` presenta oro, plata, joyas con esmeraldas y tejido de manillas en oro. La portada y la navegación enlazan el directorio. La búsqueda del asistente web consulta el mismo catálogo sin requerir la IA educativa. WhatsApp no está conectado todavía.
+
+Los datos se leen de `public/directory-data.json`. El catálogo comienza vacío por decisión del propietario: los comerciantes se registrarán más adelante mediante un formulario con enlace compartible. Esta actualización no crea ese formulario ni publica negocios de ejemplo.
+
+Para una futura ficha: `name`, `local`, `phone`, `whatsapp` con código de país, `hours`, `categories`, `services`, `updatedOn` (AAAA-MM-DD) y `status`. Categorías admitidas: `oro`, `plata`, `esmeraldas`, `tejido`. Una ficha solo se muestra con estado `published`, local, fecha y especialidades válidas; el tejido debe estar registrado explícitamente. Revisar los datos y la autorización del comercio antes de publicar. Los campos de contacto son públicos: no incluir documentos de identidad ni datos privados.
+
+El formulario futuro debe recibir también la autorización para publicar datos y videos, y mantener las solicitudes pendientes de revisión separadas del catálogo público. El directorio no ofrece intermediación ni contactos de compra de oro de origen minero; ese servicio queda pendiente de definición.
