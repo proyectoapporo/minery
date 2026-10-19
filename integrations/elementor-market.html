@@ -1,0 +1,14 @@
+<!-- Pegar una sola vez por página en un widget HTML de Elementor.
+     Mantener los enlaces de atribución. No requiere GoldAPI ni claves.
+     Inserción de terceros pendiente de comprobar en el dominio final. -->
+<style>
+.minery-market{font-family:system-ui,sans-serif;color:#203c32}.minery-market-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.minery-market-card{background:#faf8f2;border:1px solid #dedfd4;border-radius:12px;padding:20px;min-width:0}.minery-market-card h3{font-size:21px;margin:0 0 12px}.minery-market-card p{font-size:13px;line-height:1.8}.minery-market-card img{max-width:100%;height:auto}.minery-market a{color:#315b43;text-decoration:underline}@media(max-width:760px){.minery-market-grid{grid-template-columns:1fr}}
+</style>
+<section class="minery-market" aria-label="Comportamiento del oro y la plata">
+<h2>Oro y plata: comportamiento del día</h2>
+<p>Vista solicitada: COP por onza troy. Consulta la fecha, moneda y unidad que muestra cada gráfica.</p>
+<div class="minery-market-grid">
+<article class="minery-market-card"><h3>Oro</h3><a href="https://goldprice.org/" target="_blank" rel="noopener noreferrer">Gold Price</a><div id="gold-price" data-gold_price="COP-o-1d"></div><script src="https://charts.goldprice.org/gold-price.js"></script><p>Si no carga: <a href="https://goldprice.org/gold-price-colombia.html" target="_blank" rel="noopener noreferrer">ver oro en Colombia ↗</a></p></article>
+<article class="minery-market-card"><h3>Plata</h3><a href="https://silverprice.org/" target="_blank" rel="noopener noreferrer">Silver Price</a> · <a href="https://goldprice.org/" target="_blank" rel="noopener noreferrer">Gold Price</a><div id="silver-price" data-silver_price="COP-o-1d"></div><script src="https://charts.goldprice.org/silver-price.js"></script><p>Si no carga: <a href="https://silverprice.org/silver-price-colombia.html" target="_blank" rel="noopener noreferrer">ver plata en Colombia ↗</a></p></article>
+</div><p>Referencia externa del mercado, no una oferta de compra ni el precio de una joya. Una onza troy equivale a 31,1034768 gramos. Este panel no consume las consultas de GoldAPI ni alimenta automáticamente las calculadoras.</p>
+</section>
