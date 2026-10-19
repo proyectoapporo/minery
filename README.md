@@ -71,3 +71,9 @@ Los datos se leen de `public/directory-data.json`. El catálogo comienza vacío 
 Para una futura ficha: `name`, `local`, `phone`, `whatsapp` con código de país, `hours`, `categories`, `services`, `updatedOn` (AAAA-MM-DD) y `status`. Categorías admitidas: `oro`, `plata`, `esmeraldas`, `tejido`. Una ficha solo se muestra con estado `published`, local, fecha y especialidades válidas; el tejido debe estar registrado explícitamente. Revisar los datos y la autorización del comercio antes de publicar. Los campos de contacto son públicos: no incluir documentos de identidad ni datos privados.
 
 El formulario futuro debe recibir también la autorización para publicar datos y videos, y mantener las solicitudes pendientes de revisión separadas del catálogo público. El directorio no ofrece intermediación ni contactos de compra de oro de origen minero; ese servicio queda pendiente de definición.
+
+## Minery Negocios persistente — implementación pendiente de activación
+
+Interfaz preparada: `public/negocios-app.html`. Servidor: `netlify/functions/business.mjs`. Esquema privado y RPC transaccional: `database/negocios.sql`. Instalación, verificación y límites del piloto: `negocios/README.md`.
+
+Esta versión añade autenticación, aislamiento por almacén, inventario, ventas con reintentos idempotentes y regularización de piezas vendidas sin ficha previa. La emisión electrónica y WhatsApp continúan pendientes. La base remota no fue modificada: el acceso al proyecto Minery no está disponible en el conector actual. El módulo permanece desactivado por defecto hasta configurar y verificar ese proyecto.

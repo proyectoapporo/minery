@@ -9,6 +9,11 @@
   "scripts": {
     "test": "node --test",
     "dev": "node --env-file-if-exists=.env server.mjs",
-    "check": "node --check public/app.js && node --check public/business.js && node --check public/business-math.js && node --check public/history.js && node --check netlify/functions/quote.mjs && node --check public/materials.js && node --check public/materials-ui.js && node --check public/chat.js && node --check netlify/functions/assistant.mjs && node --check server.mjs && node --check public/catalog.js && node --check public/library.js && node --check public/routes.js && node --check public/case-store.js && node --check public/cases.js && node --check public/space.js && node --check public/site.js && node --check public/directory.js && node --check public/directory-ui.js"
+    "check": "node --check public/app.js && node --check public/business.js && node --check public/business-math.js && node --check public/history.js && node --check netlify/functions/quote.mjs && node --check public/materials.js && node --check public/materials-ui.js && node --check public/chat.js && node --check netlify/functions/assistant.mjs && node --check server.mjs && node --check public/catalog.js && node --check public/library.js && node --check public/routes.js && node --check public/case-store.js && node --check public/cases.js && node --check public/space.js && node --check public/site.js && node --check public/directory.js && node --check public/directory-ui.js && node --check netlify/functions/business.mjs",
+    "business:build": "python negocios/build-live.py",
+    "business:test": "node negocios/test-live-client.cjs && node prototype/check-prototype.cjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.14"
   }
 }
