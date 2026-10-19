@@ -2,7 +2,9 @@
 
 ## Estado
 
-Código implementado y pruebas locales ejecutadas. **No activado en Supabase ni en Netlify.** El conector disponible solo lista Ridera y ridera aventura; el proyecto Minery `qktnueimdaokppysqqts` devuelve falta de permisos. No se han modificado esas bases ni se han copiado sus registros.
+Código implementado y pruebas locales ejecutadas. **Base instalada en Supabase; servidor web pendiente de activación en Netlify.** El 19 de octubre de 2026 se confirmó acceso al proyecto correcto `qktnueimdaokppysqqts`, con estado ACTIVE_HEALTHY. Se aplicaron `minery_business_private_core` y `minery_business_audit_indexes`. No se modificaron los proyectos de Ridera.
+
+Verificación remota: seis tablas privadas con RLS; sin SELECT para anon/authenticated; RPC SECURITY INVOKER ejecutable solo por service_role; rechazo de llamadas sin actor. No hay usuarios de Auth todavía. Falta crear el administrador, configurar el servidor, desplegar y probar el flujo completo con cuentas reales.
 
 La demo independiente sigue en `public/negocios.html`. La aplicación preparada para el servidor es `public/negocios-app.html`, con inicio de sesión, alta del primer almacén, inventario/importación CSV, ventas, pendientes, configuración y documentos imprimibles.
 
@@ -18,10 +20,10 @@ La demo independiente sigue en `public/negocios.html`. La aplicación preparada 
 - Una clave idempotente impide repetir ventas/entradas cuando se reintenta una operación. Ante respuesta perdida, el botón «Confirmar operación anterior» reutiliza los datos y clave originales mientras la página siga abierta.
 - Las ventas guardan instantánea de datos comerciales y condiciones de garantía.
 
-## Activación pendiente (solo en el proyecto verificado de Minery)
+## Activación web pendiente (base de Minery ya instalada)
 
-1. Conectar la cuenta/organización de Supabase con acceso a `qktnueimdaokppysqqts`.
-2. Inspeccionar los esquemas existentes y aplicar `database/negocios.sql` como migración nueva. El SQL crea objetos con nombres propios; no contiene DROP ni modifica tablas del asistente. Ejecutarlo una sola vez.
+1. Acceso confirmado a `qktnueimdaokppysqqts`; no volver a aplicar el esquema.
+2. Las dos migraciones están aplicadas. `database/negocios.sql` e `database/negocios-indexes.sql` son copias de los cambios iniciales, no scripts que deban repetirse.
 3. Ejecutar verificaciones y advisors en ese proyecto. Comprobar grants y probar con dos cuentas/almacenes diferentes. Las pruebas locales no sustituyen esta validación.
 4. Crear/invitar el usuario inicial mediante la administración de Supabase Auth, sin insertar contraseñas manualmente en SQL. El propietario entra y crea el almacén desde la aplicación. Mantener el registro público de cuentas deshabilitado si no se desea autoservicio.
 5. Configurar en Netlify, con alcance Functions y producción: `SUPABASE_URL` del proyecto, `SUPABASE_SERVICE_ROLE_KEY` como secreto, `MINERY_BUSINESS_ORIGIN` con el origen HTTPS real sin barra final y `MINERY_BUSINESS_ENABLED=true`.
@@ -61,3 +63,9 @@ La prueba de gateway usa Auth/HTTP simulados. La del cliente comprueba su lógic
 ## Fuentes técnicas revisadas
 
 Documentación de Supabase: RLS, SECURITY INVOKER y permisos de funciones. Changelog revisado el 19 de octubre de 2026: cambios recientes de cifrados TLS y PostgreSQL; no se usan cifrados obsoletos ni operadores personalizados afectados. No se modificaron extensiones ni funciones de otros sistemas.
+
+## Advisors tras la instalación
+
+Las cuatro observaciones de claves foráneas sin índice de minery_business se corrigieron con índices para actor, creador y venta. Las observaciones informativas de RLS sin políticas son intencionales: las tablas son privadas, no hay grants a roles de navegador, y service_role es el único acceso del servidor. No abrir políticas públicas para eliminar esas observaciones. Los índices nuevos aún no usados son esperables antes de operar. No se modificaron los avisos del esquema minery_knowledge, que es independiente.
+
+Referencia del aviso informativo: https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy
